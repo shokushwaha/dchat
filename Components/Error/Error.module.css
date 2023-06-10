@@ -1,0 +1,14 @@
+.Error {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 1111111111;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: black;
+    color: azure;
+    box-shadow: 0px 0px 20px gray
+}

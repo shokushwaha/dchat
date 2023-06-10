@@ -1,0 +1,49 @@
+.UserCard {
+    background-color: azure;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    border-bottom: 2px solid yellow;
+
+
+}
+
+.UserCard_box {
+    padding: 0.4rem 1rem;
+}
+
+.UserCard_box_img {
+    border-radius: 50%;
+    padding-bottom: 1rem;
+}
+
+
+
+.UserCard_box_info button {
+    background-color: white;
+    color: black;
+    width: 50%;
+    border: 2px solid yellow;
+    padding: 0.4rem 1rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all;
+}
+
+.UserCard_box_info button:hover {
+    background-color: yellow;
+    transition-duration: 1000ms;
+}
+
+.number {
+    position: absolute;
+    right: 1rem;
+    padding: 1rem 1.3rem;
+    border-radius: 50%;
+    background-color: yellow;
+    top: 1rem;
+    font-weight: 800;
+}
