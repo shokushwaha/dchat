@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Style from "./Chat.module.css";
 import images from "../../../assets";
-import { converTime } from "../../../Utils/apiFeature";
+import { converTime } from "../../../utils/apiFeature";
 import { Loader } from "../../index";
 
 const Chat = ({
