@@ -1,13 +1,9 @@
 import React, { useState, useContext } from "react";
-import Image from "next/image";
-import Style from "./Friend.module.css";
-import images from "../../assets";
 import Card from "./Card/Card";
 import Chat from "./Chat/Chat";
 import { ChatAppContect } from "../../Context/ChatAppContext";
 
 const Friend = () => {
-
     const {
         sendMessage,
         account,
@@ -22,9 +18,9 @@ const Friend = () => {
     } = useContext(ChatAppContect);
     console.log(friendLists);
     return (
-        <div className={Style.Friend}>
-            <div className={Style.Friend_box}>
-                <div className={Style.Friend_box_left}>
+        <div className="flex ">
+            <div className="flex justify-center gap-10 w-4/5 mx-auto">
+                <div className="w-1/3 bg-gray-100 px-4   py-2">
                     {friendLists.map((el, i) => (
                         <Card
                             key={i + 1}
@@ -35,7 +31,7 @@ const Friend = () => {
                         />
                     ))}
                 </div>
-                <div className={Style.Friend_box_right}>
+                <div className="w-3/5 ">
                     <Chat
                         functionName={sendMessage}
                         readMessage={readMessage}

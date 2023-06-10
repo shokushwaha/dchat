@@ -7,8 +7,8 @@ import { ChatAppContect } from "../Context/ChatAppContext";
 const alluser = () => {
     const { userLists, addFriends } = useContext(ChatAppContect);
     return (
-        <div className={Style.alluser_box}>
-            <div className={Style.alluser_info}>
+        <div className="w-4/5 mx-auto mt-4">
+            <div className="">
                 <div className={Style.container}>
                     <div className={Style.content}>
                         <div className={Style.content__container}>
@@ -27,7 +27,7 @@ const alluser = () => {
                 </div>
             </div>
 
-            <div className={Style.alluser}>
+            <div className="grid grid-cols-3 gap-4">
                 {userLists.map((el, i) => (
                     <UserCard key={i + 1} el={el} i={i} addFriends={addFriends} />
                 ))}

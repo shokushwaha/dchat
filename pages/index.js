@@ -12,7 +12,7 @@ const ChatApp = () => {
 
 
   return (
-    <div className="main_box">
+    <>
       <Toaster
 
         toastOptions={{
@@ -27,7 +27,7 @@ const ChatApp = () => {
       />
       <Filter />
       <Friend />
-    </div>
+    </>
   );
 };
 
