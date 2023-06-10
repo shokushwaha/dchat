@@ -4,7 +4,7 @@ import {
     ChechIfWalletConnected,
     connectWallet,
     connectingWithContract,
-} from '../Utils/apiFeature'
+} from '../utils/apiFeature'
 
 export const ChatAppContect = React.createContext()
 
