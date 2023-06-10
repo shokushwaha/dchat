@@ -21,7 +21,7 @@ export const ChechIfWalletConnected = async () => {
 export const connectWallet = async () => {
     try {
 
-
+        git
         if (!window.ethereum) return console.log("Install MetaMask");
 
         const accounts = await window.ethereum.request({
